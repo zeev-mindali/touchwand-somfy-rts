@@ -1,16 +1,170 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "somfy",
   "pluginType": "platform",
   "singular": true,
   "schema": {
     "type": "object",
-    "properties": {
-      "name": {
-        "title": "Name",
-        "type": "string",
-        "required": true,
-        "default": "Example Dynamic Platform"
+    "properties": 
+      {
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "required": true,
+          "default": "shutter1",
+          "description": "shutter"
+        },
+        "ip": {
+          "title": "IP Address",
+          "type": "string",
+          "required": true,
+          "default": "192.168.1.206",
+          "description": "ip address of the device"
+        },
+        "port": {
+          "title": "Port",
+          "type": "string",
+          "required": true,
+          "default": "1001",
+          "description": "port of the device"
+        },
+        "rtsid": {
+          "title": "RTS ID",
+          "type": "string",
+          "required": true,
+          "default": "05DA12",
+          "description": "RTS ID of the device"
+        },
+        "connection": {
+          "title": "connection type",
+          "type": "string",
+          "required": true,
+          "default": "eth",
+          "description": "connection type of the device"
+        },
+        "sender": {
+          "title": "sender id",
+          "type": "string",
+          "required": true,
+          "default": "fffffe",
+          "description": "sender id of the system"
+        },
+        "channel1": {
+          "title": "channel 1 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel2": {
+          "title": "channel 2 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel3": {
+          "title": "channel 3 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel4": {
+          "title": "channel 4 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel5": {
+          "title": "channel 5 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel6": {
+          "title": "channel 6 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel7": {
+          "title": "channel 7 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel8": {
+          "title": "channel 8 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel9": {
+          "title": "channel 9 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel10": {
+          "title": "channel 10 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel11": {
+          "title": "channel 11 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel12": {
+          "title": "channel 12 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel13": {
+          "title": "channel 13 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel14": {
+          "title": "channel 14 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel15": {
+          "title": "channel 15 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "channel16": {
+          "title": "channel 16 active",
+          "type": "boolean",
+          "required": true,
+          "default": false
+        },
+        "endUnit": {
+          "title": "end unit type",
+          "type": "string",
+          "required": true,
+          "default": "waveshare",
+          "description": "rs485 end type unit"
+        },
+        "reverse": {
+          "title": "reverse motors",
+          "type": "boolean",
+          "required": true,
+          "default": false,
+          "description": "reverse motors in shutter"
+        },
+        "actCode": {
+          "title": "Activation code...",
+          "type": "string",
+          "required": true,
+          "default": "na",
+          "description": "Activation code from touchwand"
+        }
       }
-    }
   }
 }
